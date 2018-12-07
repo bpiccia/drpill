@@ -1,5 +1,7 @@
 {
   "name": "DrPill",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

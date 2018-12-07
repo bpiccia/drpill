@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Alarme } from '../../modelos/alarme';
+import { NovoAlarmePage } from '../novo-alarme/novo-alarme';
 
 /**
  * Generated class for the AlarmesPage page.
@@ -14,12 +16,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'alarmes.html',
 })
 export class AlarmesPage {
+  
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    //get alarmes cadastrados
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AlarmesPage');
+  novoAlarme(){
+    this.navCtrl.push(NovoAlarmePage.name);
+  }
+
+  pegaAlarmes(){
+
   }
 
 }

@@ -1,0 +1,47 @@
+<!--
+  Generated template for the NovoAlarmePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Novo Alarme</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+    <ion-item>
+      <ion-label stacked>Remédio:</ion-label>
+      <ion-input [(ngModel)]="nome" name="nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Duração (dias):</ion-label>
+      <ion-input [(ngModel)]="duracao" name="duracao"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Intervalo (horas):</ion-label>
+      <ion-input [(ngModel)]="intervalo" name="intervalo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Quantidade:</ion-label>
+      <ion-input [(ngModel)]="quantidade" name="quantidade"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Data Inicial:</ion-label>
+      <ion-datetime [(ngModel)]="dataInicial" name="dataInicial" displayFormat="DD/MM/YY"></ion-datetime>
+    </ion-item>
+
+    <div padding>
+      <button ion-button block (click)="adicionarAlarme()"> 
+        Salvar
+      </button>
+    </div>
+    
+
+</ion-content>
